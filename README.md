@@ -33,7 +33,7 @@ lose: [https://drive.google.com/file/d/1NUnZsHTlHMh-MpUnIbK7eC0Kg0NfWaPR/view?us
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/ArjunJayakrishnan/My-Repo-14]
 - Live Site URL: [https://658dc10273b21612b5441beb--zesty-tulumba-6ce726.netlify.app/]
 
 ### Built with
