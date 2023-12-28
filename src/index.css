@@ -1,0 +1,282 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+	background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.appContainer {
+	padding: 1.8rem 0;
+	min-height: 100vh;
+	position: relative;
+}
+
+.rulesContainer {
+	height: 36rem;
+	width: 36rem;
+	padding: 2rem;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.rulesContainer div {
+	width: 100%;
+}
+
+.rulesContainer h2 {
+	font-size: 3.2rem;
+	color: hsl(217, 16%, 45%);
+}
+
+.headingRulesContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rulesImage {
+	margin-left: 10px;
+}
+
+.scoreBoard {
+	color: white;
+	font-weight: 700;
+	margin: 0 auto;
+	border: 2px solid hsl(217, 16%, 45%);
+	border-radius: 10px;
+	width: 50%;
+	padding: 2.4rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gameName {
+	font-size: 3.3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.gameName h3 {
+	line-height: 0.8;
+}
+
+.scoreCard {
+	padding: 0.8rem 4rem;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.scoreCard h4 {
+	font-weight: 600;
+	font-size: 2.4rem;
+	color: hsl(229, 64%, 46%);
+}
+
+.scoreCard p {
+	font-size: 4.8rem;
+	color: hsl(229, 64%, 46%);
+}
+
+.triangleImage {
+	width: 31rem;
+}
+
+.triangleContainer {
+	width: 31rem;
+	margin: auto;
+	margin-top: 12rem;
+	position: relative;
+}
+
+.choosePaper {
+	width: 12rem;
+	height: 12rem;
+	border-radius: 100%;
+	background-color: white;
+	outline: 2rem solid blue;
+	position: absolute;
+	top: -28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.choosePaper:hover {
+	outline: 2rem solid white;
+}
+.chooseRock:hover {
+	outline: 2rem solid white;
+}
+.chooseScissor:hover {
+	outline: 2rem solid white;
+}
+
+.chooseRock {
+	width: 12rem;
+	height: 12rem;
+	border-radius: 100%;
+	background-color: white;
+	outline: 2rem solid red;
+	position: absolute;
+	bottom: -28px;
+	left: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.chooseScissor {
+	width: 12rem;
+	height: 12rem;
+	border-radius: 100%;
+	background-color: white;
+	outline: 2rem solid yellow;
+	position: absolute;
+	top: -28px;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.toRulesButton {
+	font-size: 1.8rem;
+	color: white;
+	border-radius: 0.5rem;
+	padding: 0.6rem 2.4rem;
+	border: 1px solid white;
+	background-color: hsl(237, 49%, 15%);
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+.afterThrow {
+	margin: 5rem auto;
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.afterThrow p {
+	text-align: center;
+	font-size: 2.4rem;
+	color: white;
+}
+
+.userThrow {
+	display: flex;
+	flex-direction: column;
+	gap: 8rem;
+}
+.houseThrow {
+	display: flex;
+	flex-direction: column;
+	gap: 8rem;
+}
+
+.throws {
+	width: 15rem;
+	height: 15rem;
+	border-radius: 100%;
+	background-color: white;
+	outline: 2rem solid blue;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.result {
+	/* margin: auto 0; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.result p {
+	font-size: 3.2rem;
+	margin-bottom: 1.2rem;
+}
+
+.result button {
+	padding: 0.8rem 2.4rem;
+	border: none;
+	background-color: white;
+	color: hsl(237, 49%, 15%);
+	font-size: 1.4rem;
+	border-radius: 5px;
+}
+
+/* media Querries */
+
+@media (max-width: 900px) {
+	.afterThrow {
+		width: 90%;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+	.result {
+		grid-row: 2;
+		grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 700px) {
+	html {
+		font-size: 9px;
+	}
+	.scoreBoard {
+		width: 90%;
+	}
+	.toRulesButton {
+		bottom: 5;
+	}
+	.rulesContainer {
+		top: 0;
+		left: 0;
+		height: 75%;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+	}
+	.rulesImageContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 8px;
+	}
+	.throws {
+		width: 10rem;
+		height: 10rem;
+	}
+}
+
+@media (max-width: 315px) {
+	html {
+		font-size: 7px;
+	}
+}
